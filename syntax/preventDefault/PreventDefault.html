@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>preventDefault</title>
+</head>
+<body>
+    <!--checkbox test-->
+    <form>
+        <label for="id-checkbox"> preventDefault check : </label>
+        <input type="checkbox" id="id-checkbox"/>
+    </form>
+
+    <!--button test-->
+    <form id="btn">
+        버튼 <input type="text" id= "btnText">
+        <input type="button" onclick="btnClick()" value="확인">
+    </form>
+
+    <!--submit test-->
+    <form id="sm">
+        전송 <input type="text" id="submitText">
+        <input type="submit" value="확인">
+    </form>
+
+<div id="output"></div>
+<div id="text"></div>
+</body>
+<script src ="PreventDefault.js"></script>
+</html>
