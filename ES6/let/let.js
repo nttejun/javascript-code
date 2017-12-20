@@ -1,5 +1,5 @@
 
-// 정의된 스코프 단계에서만 유효한 let
+// let 정의된 스코프 내부에서만 유효
 
 let letValue = "let";
 
@@ -15,8 +15,18 @@ if(true){
 
     console.log(notLet);
 
+    function letTest() {
+
+        console.log(letValue + " function");
+
+        return "1";
+
+    };
+
 }
 
 console.log(letValue);
 
 console.log(notLet);
+
+letTest();
