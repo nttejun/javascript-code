@@ -21,3 +21,8 @@ console.log(typeof (strNumber + 12.345));
 
 var obj = { foo : 123 };
 console.log(Object(obj) === obj);
+
+var primit = {};
+console.log(primit.valueOf() === primit);
+console.log(primit.toString());
+
